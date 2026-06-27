@@ -1,0 +1,4 @@
+name: Afkamrat4
+version: '4.0'
+main: com.lecani.afkamrat4.Afkamrat4
+api-version: '1.21'
