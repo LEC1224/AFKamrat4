@@ -9,7 +9,7 @@ import org.bukkit.scoreboard.Scoreboard
 import java.io.File
 import java.util.UUID
 
-class Afkamrat : JavaPlugin() {
+class Afkamrat4Plugin : JavaPlugin() {
     lateinit var dataConfig: FileConfiguration
     private lateinit var dataFile: File
     lateinit var scoreboard: Scoreboard

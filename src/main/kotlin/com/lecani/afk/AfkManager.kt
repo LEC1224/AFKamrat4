@@ -1,4 +1,4 @@
-package com.lecani.afk.afkamrat4Plugin
+package com.lecani.afk
 
 import org.bukkit.Bukkit
 import org.bukkit.configuration.file.FileConfiguration

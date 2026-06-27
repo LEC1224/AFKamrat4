@@ -1,4 +1,34 @@
 name: Afkamrat4
-version: '4.0'
-main: com.lecani.afkamrat4.Afkamrat4
-api-version: '1.21'
+main: com.lecani.afk.Afkamrat4Plugin
+version: 1.0.0
+api-version: 1.16
+author: LeCaNi
+description: Handles AFK detection, player activity tracking, and scoreboard team assignments.
+
+commands:
+  afk:
+    description: Toggles AFK status.
+    usage: /afk
+    permission: afkamrat.afk
+    aliases: [away, idle, brb, paus, borta, straxtbx, strax, fikapaus]
+  back:
+    description: Return from AFK status.
+    usage: /back
+    permission: afkamrat.back
+    aliases: [return, imback, active, online, tillbaka, tbx, tillbaks, ater, åter, här]
+  permaafk:
+    description: Toggles permanent AFK status.
+    usage: /permaafk
+    permission: afkamrat.permaafk
+    aliases: [permaborta, permanentafk, parkera, pauslage, pausläge]
+
+permissions:
+  afkamrat.afk:
+    description: Allows the player to set themselves AFK.
+    default: true
+  afkamrat.back:
+    description: Allows the player to return from AFK.
+    default: true
+  afkamrat.permaafk:
+    description: Allows the player to toggle permanent AFK.
+    default: true
