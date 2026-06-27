@@ -1,0 +1,28 @@
+warn-after: 180         # seconds until warning message (default 3 min)
+afk-after: 300          # seconds until auto-AFK (default 5 min)
+
+afk-penalty-points: 5   # how many points to subtract on auto-AFK
+
+month-abbreviations:    # exactly 12 entries, case-sensitive
+  - "jan"
+  - "feb"
+  - "mar"
+  - "apr"
+  - "may"
+  - "jun"
+  - "jul"
+  - "aug"
+  - "sep"
+  - "oct"
+  - "nov"
+  - "dec"
+
+new-threshold: 1000     # TimeOnline < 1000 → "new" team
+active-threshold: 1800  # TimeMonth >= 1800 (30h) → "active" team
+
+warning-message: "%player% has been idle for 3 minutes."
+afk-message: "%player% is now AFK."
+return-message: "%player% is no longer AFK."
+manual-afk-message: "%player% has manually gone AFK."
+manual-return-message: "%player% is no longer AFK (manual)."
+sleep-status-message: "%count%/%required% players sleeping (AFK not counted)."

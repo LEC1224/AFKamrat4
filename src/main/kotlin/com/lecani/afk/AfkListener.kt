@@ -15,6 +15,7 @@ class AfkListener(private val manager: AfkManager) : Listener {
 
     @EventHandler
     fun onPlayerMove(event: PlayerMoveEvent) {
+        if (manager.isPermaAfk(event.player)) return
         val from = event.from
         val to = event.to
         if (from.yaw != to.yaw || from.pitch != to.pitch) {
@@ -24,18 +25,12 @@ class AfkListener(private val manager: AfkManager) : Listener {
 
     @EventHandler
     fun onPlayerJoin(event: PlayerJoinEvent) {
-        val player = event.player
-        if (!manager.isAfk(player)) {
-            manager.assignPlayerTeam(player)
-        }
+        manager.handleJoin(event.player)
     }
 
     @EventHandler
     fun onPlayerQuit(event: PlayerQuitEvent) {
-        val player = event.player
-        if (!manager.isAfk(player)) {
-            manager.recordActivity(player)
-        }
+        manager.handleQuit(event.player)
     }
 
     @EventHandler
