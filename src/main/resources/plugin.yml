@@ -1,6 +1,6 @@
 name: Afkamrat4
 main: com.lecani.afk.Afkamrat4Plugin
-version: 1.0.0
+version: 1.1.0
 api-version: 1.16
 author: LeCaNi
 description: Handles AFK detection, player activity tracking, and scoreboard team assignments.
